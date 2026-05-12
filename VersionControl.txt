@@ -1,0 +1,82 @@
+Version Control System (VCS) is a tool used in software dev and collobaration to manage changes to source code over time. 
+
+Features:
+1. Tracks and records changes to codebase, manintaining a structured project history.
+For example: Git allows developers to commit changes with descriptive messages, 
+making it easier to understand the evolution of the codebase.
+
+2. Allows multiple developers to work on the same codebase simultaneously without conflicts.
+3. Developers access and update a centtral repository, where project files are stored. (e.g. GitHub, GitLab, Bitbucket)
+4. Enables teams to share updates, and revert to the previous versions of the code if needed.
+
+Common VCS tools include Git, Subversion (SVN), Mercurial, and Perforce.
+
+Components of VCS:
+1. Repository: A central location where all project files and their history are stored.
+2. Commit: A snapshot of changes made to the codebase, along with a descriptive message.
+git commit -m "Added new feature to the application"
+3. Branch: A separate line of development that allows developers to work on new features or bug fixes without affecting the main codebase.
+git checkout -b new-feature-branch
+4. Merging: The process of integrating changes from one branch into another, typically the main branch.
+git merge new-feature-branch
+5. Pull Request: A request to merge changes from one branch into another, often used for code review and collaboration.
+6. Clone: Creating a local copy of a remote repository to work on it locally.
+git clone <repository_url>
+7. Push: Uploading local changes to a remote repository.
+git push origin new-feature-branch
+8. Pull: Fetching and integrating changes from a remote repository into the local repository.
+git pull origin main
+9. Revision: A specific version of the codebase, identified by a unique identifier (e.g. commit hash in Git).
+
+Types of VCS:
+1. Local VCS: A simple version control system that stores all versioned files in a local database on the developer's machine. (e.g. RCS, SCCS)
+Characteristics:
+No Internet or server dependency
+Useful for Individual projects
+Limited to single user environments
+
+2. Centralized VCS: A version control system that relies on a central server to store all versioned files and manage access to them. (e.g. SVN, CVS)
+Characteristics:
+Centralized repository for all project files
+Requires Internet or server access
+Suitable for teams and collaborative projects
+Provides better access control and security
+
+Pros:
+Enables collaboration among multiple developers through a central repository.
+Provides a history of changes, allowing developers to track and revert to previous versions if needed.
+Allows fine-grained access control and security for project files.
+
+Cons:
+Has a single point of failure, as the central server can become unavailable or corrupted.
+If the central server goes down, developers can't collaborate or access the latest version of the codebase.
+
+3. Distributed Version Control System: A version control system that allows each developer to have a complete copy of the repository, including its history. 
+(e.g. Git, Mercurial)
+Characteristics:
+Each developer has a full copy of the repository, including its history.
+No central server dependency, allowing for offline work and collaboration.
+Suitable for large and distributed teams, as well as open-source projects.
+Provides better performance and scalability compared to centralized VCS.
+
+Multiple VCS Tools
+1. Git: A widely used distributed version control system known for its speed, flexibility, and powerful branching and merging capabilities.
+2. Subversion (SVN): A centralized version control system that is easy to use and provides good support for binary files, but lacks some of
+ the advanced features of distributed VCS.
+3. Mercurial: A distributed version control system that is similar to Git but is designed to be simpler and easier to use, with a focus on 
+performance and scalability.
+4. Perforce: A centralized version control system that is designed for large teams and enterprise environments, offering advanced features 
+for handling large codebases and binary files.
+
+Git Configuration
+1. checking git version
+    git --version 
+2. Initializing a git repository
+    cd <file path> 
+    git init
+3. Git Configuration
+    git config --global user.name Kartik9548
+    git config --global user.email kathuriakartik42@gmail.com
+4. git add . -> adding all files from untracked to tracked
+   git add Vcs.txt
+5. git commit -m "message"

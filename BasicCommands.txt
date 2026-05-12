@@ -1,0 +1,32 @@
+# Core Concepts of Git
+
+# 1. Repository: A repository is a storage space where your project files and their history are stored. 
+# It can be local (on your computer) or remote (on a server like GitHub).
+# Local Repository: A local repository is the version of your project that exists on your computer.
+# Remote Repository: A remote repository is a version of your project that is hosted on a server, 
+#                    allowing you to collaborate with others and access your project from different locations.
+
+# 2. Commit: A commit is a snapshot of your project at a specific point in time.
+# Each commit has uniuque id (hash) and contains information about the changes made to the files in your project.
+# Commits allow you to track the history of your project and revert to previous versions if needed
+
+# 3. Branch: A branch is a separate line of development in your project.
+# It allows you to work on new features or bug fixes without affecting the main codebase.
+# 1. Main or Master Branch: Stable version of the project, often used for production.
+# 2. Feature Branch: Used for developing new features or making changes without affecting the main branch.
+# 3. Bugfix Branch: Used for fixing bugs or issues in the code without affecting the main branch.
+
+# 4. Merging: Merging is the process of combining changes from one branch into another.
+# It allows you to integrate new features or bug fixes into the main codebase.
+
+# 5. Cloning: Cloning is the process of creating a copy of a remote repository on your local machine.
+# This copy includes all the files, commits, and branches from the remote repository, allowing you to work on the project locally.
+
+# 6. Pull and Push:
+# Pull: Fetches updates from the remote repo and merges them into your local repo.
+# Push: Uploads your local commits to the remote repository, making them available to others.
+
+# THREE STATES 
+# 1. Working Directory: Project Folder on your computer where you make changes to files. (Untracked, Modified, or Staged)
+# 2. Staging Area (Index): A temporary area where you can prepare your changes before committing them.
+# 3. Repository (Commit History or .git directory): The place where all your commits are stored, along with the history of changes to your project.
